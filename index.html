@@ -2,112 +2,126 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Mahjong Link - что заменено, а что ещё нет</title>
+<title>Маджонг - как выглядит сейчас</title>
 <style>
- body { margin:0; background:#14161a; color:#e8e8ea; font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif; }
- .wrap { max-width:1100px; margin:0 auto; padding:32px 20px 80px; }
- h1 { font-size:30px; margin:0 0 6px; }
- h2 { font-size:23px; margin:48px 0 4px; }
- h3 { font-size:18px; margin:26px 0 4px; color:#cfd3da; }
- p { margin:8px 0 14px; color:#c8ccd4; }
- .lead { color:#9aa1ad; margin-bottom:26px; }
- img { max-width:100%; border-radius:8px; display:block; }
- .shot { border:1px solid #2c3038; }
- .two { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
- .card { background:#1b1e24; border:1px solid #2c3038; border-radius:10px; padding:16px 18px; }
- .tag { display:inline-block; font-size:13px; padding:2px 9px; border-radius:20px; margin-right:6px; }
- .ok { background:#1d3a24; color:#8fe0a0; }
- .no { background:#3d2020; color:#f0a0a0; }
- table { border-collapse:collapse; width:100%; margin:12px 0 6px; font-size:15px; }
- th,td { text-align:left; padding:8px 10px; border-bottom:1px solid #2c3038; }
- th { color:#9aa1ad; font-weight:600; }
- td.num { text-align:right; font-variant-numeric:tabular-nums; }
- .bar { height:10px; border-radius:5px; background:#333842; overflow:hidden; }
- .bar i { display:block; height:100%; background:#4f9d6a; }
- .muted { color:#8b929d; font-size:14px; }
+ body {{ margin:0; background:#12141a; color:#e9e9ec; font:16px/1.65 -apple-system,Segoe UI,Roboto,sans-serif; }}
+ .wrap {{ max-width:1180px; margin:0 auto; padding:36px 20px 90px; }}
+ h1 {{ font-size:32px; margin:0 0 8px; }}
+ h2 {{ font-size:24px; margin:54px 0 6px; }}
+ h3 {{ font-size:19px; margin:0 0 10px; }}
+ p {{ margin:8px 0 14px; color:#c7cbd3; }}
+ .lead {{ color:#98a0ac; margin-bottom:24px; }}
+ img {{ max-width:100%; border-radius:8px; display:block; }}
+ .card {{ background:#1a1d24; border:1px solid #2b2f38; border-radius:12px; padding:18px 20px; margin:18px 0; }}
+ .pair {{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }}
+ .pair figcaption {{ color:#8b93a0; font-size:14px; margin-top:6px; }}
+ .notes {{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px; }}
+ .note {{ border-radius:9px; padding:12px 14px; font-size:15px; }}
+ .have {{ background:#16281c; border:1px solid #24452e; }}
+ .need {{ background:#2a1c18; border:1px solid #4a2c22; }}
+ .note b {{ display:block; margin-bottom:4px; }}
+ .have b {{ color:#8fe0a0; }}
+ .need b {{ color:#f0a883; }}
+ .bar {{ height:12px; border-radius:6px; background:#2f3540; overflow:hidden; margin:6px 0 10px; }}
+ .bar i {{ display:block; height:100%; background:#4f9d6a; }}
+ .muted {{ color:#858d99; font-size:14px; }}
+ table {{ border-collapse:collapse; width:100%; margin:14px 0 6px; font-size:15px; }}
+ th,td {{ text-align:left; padding:9px 10px; border-bottom:1px solid #2b2f38; vertical-align:top; }}
+ th {{ color:#98a0ac; font-weight:600; }}
+ a {{ color:#8ec6ff; }}
+ .four {{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }}
+ .four figcaption {{ color:#8b93a0; font-size:13px; margin-top:5px; }}
 </style>
 <div class="wrap">
-<h1>Что в игре уже наше, а что ещё чужое</h1>
-<p class="lead">Сборка <b>port-art2</b>, 10.09.2026. Скриншоты сняты из живой игры, картинки вырезаны прямо из
-файлов сборки. Все числа посчитаны машиной: каждый кадр сравнён с оригиналом попиксельно.</p>
+
+<h1>Маджонг: как выглядит сейчас</h1>
+<p class="lead">Сборка port-art2, 10.09.2026. Слева на каждой паре - макет Ани,
+справа - живой экран игры, снятый сегодня. Всё, что видно справа, кроме текста, это её файлы.</p>
 
 <div class="card">
-<h3 style="margin-top:0">Коротко</h3>
-<p>Картинок в игре 428. Наших <b>361</b>, чужих <b>67</b>.</p>
+<h3>Коротко</h3>
+<p>Картинок в игре 428. Её и наших <b>361</b>, из исходной игры <b>67</b>.</p>
 <div class="bar"><i style="width:84%"></i></div>
-<p class="muted">Отдельных файлов (атласы, звук): наших 10 из 84. Один файл это пачка картинок,
-поэтому проценты по файлам и по картинкам разные.</p>
+<p class="muted">Отдельных файлов внутри сборки (атласы, звук): наших 10 из 84.
+Один файл это пачка картинок, поэтому доли по файлам и по картинкам разные.</p>
+<p>Осталось дорисовать: <b>8</b> кадров интерфейса, <b>23</b> кадров окон и рангов,
+полоса загрузки со спиннером и 21 звук.</p>
 </div>
 
-<h2>Её мокап и наша игра, экран к экрану</h2>
-<p>Слева то, что нарисовала Аня, справа то, что сейчас в сборке. Разница - шапка окна (у нас пока
-прежняя коричневая), квадратики чекбоксов вместо тумблеров, бамбук по бокам в меню (фон тянется на
-широких экранах, рисунок на нём поехал бы) и расстановка: её задаёт игра, мы её не двигаем.</p>
-<div class="card"><h3 style="margin-top:0">Меню</h3><img src="sheets/compare_menu.png" alt="Меню: мокап и игра"><p class="muted">слева мокап Ани, справа игра</p></div><div class="card"><h3 style="margin-top:0">Уровень</h3><img src="sheets/compare_level.png" alt="Уровень: мокап и игра"><p class="muted">слева мокап Ани, справа игра</p></div><div class="card"><h3 style="margin-top:0">Настройки</h3><img src="sheets/compare_settings.png" alt="Настройки: мокап и игра"><p class="muted">слева мокап Ани, справа игра</p></div><div class="card"><h3 style="margin-top:0">Таблица рекордов</h3><img src="sheets/compare_rank.png" alt="Таблица рекордов: мокап и игра"><p class="muted">слева мокап Ани, справа игра</p></div><div class="card"><h3 style="margin-top:0">Смена аватара</h3><img src="sheets/compare_avatars.png" alt="Смена аватара: мокап и игра"><p class="muted">слева мокап Ани, справа игра</p></div>
+<h2>Экраны</h2>
 
-<h2>Как выглядит сейчас</h2>
-<p>Собрано по мокапам Ани: сукно на фоне меню и уровня, панда со столиком в меню и на загрузке,
-плашка под кнопками внизу, бамбук в углу, её рамка у окон. Кнопка «Тема» убрана: набор плиток
-один, так решили 3 сентября.</p>
-<div class="two">
-  <div><img class="shot" src="shots/menu.png" alt="меню"><p class="muted">Меню</p></div>
-  <div><img class="shot" src="shots/level.png" alt="уровень"><p class="muted">Уровень</p></div>
+<div class="card">
+<h3>Меню</h3>
+<img src="sheets/pair_menu.png" alt="Меню">
+<p class="muted">слева макет Ани, справа игра</p>
+<div class="notes">
+  <div class="note have"><b>Уже её</b>Сукно, панда со столиком, кнопки, монета и её плашка, шестерня, рамка аватара, плашка под именем, иконка рекордов.</div>
+  <div class="note need"><b>Чего не хватает</b>Большая кремовая панель под тремя кнопками: у неё есть, у нас кнопки лежат прямо на сукне. Панель можно собрать из её же файла окна, это правка на нашей стороне. Подпись «Таблица рекордов» задевает ухо панды, надо развести. Шрифт не её: буквы рисует движок.</div>
 </div>
-<div class="two">
-  <div><img class="shot" src="shots/settings.png" alt="настройки"><p class="muted">Окно настроек: рамка и крестик её,
-  шапка пока прежняя</p></div>
-  <div><img class="shot" src="shots/rank.png" alt="таблица рекордов"><p class="muted">Таблица рекордов</p></div>
 </div>
+<div class="card">
+<h3>Игровой экран</h3>
+<img src="sheets/pair_level.png" alt="Игровой экран">
+<p class="muted">слева макет Ани, справа игра</p>
+<div class="notes">
+  <div class="note have"><b>Уже её</b>Все плитки, тело плитки, сукно, бамбук в углу, панда за доской, нижняя плашка с шестернёй, подсказкой и монетами.</div>
+  <div class="note need"><b>Чего не хватает</b>Плашки под надписями «Лучшее / Балл / Этап» - у неё они есть, файла нет. Сетка между плитками и линия соединения. Рука-указатель в обучении.</div>
+</div>
+</div>
+<div class="card">
+<h3>Настройки</h3>
+<img src="sheets/pair_settings.png" alt="Настройки">
+<p class="muted">слева макет Ани, справа игра</p>
+<div class="notes">
+  <div class="note have"><b>Уже её</b>Панель окна с пунктиром, крестик, кремовые строки, круглые иконки, тумблеры.</div>
+  <div class="note need"><b>Чего не хватает</b>Ничего.</div>
+</div>
+</div>
+<div class="card">
+<h3>Таблица рекордов</h3>
+<img src="sheets/pair_rank.png" alt="Таблица рекордов">
+<p class="muted">слева макет Ани, справа игра</p>
+<div class="notes">
+  <div class="note have"><b>Уже её</b>Панель окна, крестик, аватарки соперников, кольца, значки ранга.</div>
+  <div class="note need"><b>Чего не хватает</b>Оранжевые подложки строк и полосы прогресса - пока кадры исходной игры.</div>
+</div>
+</div>
+<div class="card">
+<h3>Смена аватара</h3>
+<img src="sheets/pair_avatars.png" alt="Смена аватара">
+<p class="muted">слева макет Ани, справа игра</p>
+<div class="notes">
+  <div class="note have"><b>Уже её</b>Панель окна, крестик, все 15 аватарок, кольцо вокруг выбранной, галочка.</div>
+  <div class="note need"><b>Чего не хватает</b>Ничего.</div>
+</div>
+</div>
+<h2>Экраны, которые ещё не сняты</h2>
+<p>Эти окна в игре есть, но чтобы их снять, надо доиграть уровень до конца или потратить подсказки.
+Пока показываю только макеты Ани, чтобы было видно, что нас ждёт. Панель окна и крестик там уже её,
+как и в остальных окнах; звёзды и панда над рамкой - нет.</p>
+<div class="four"><figure style="margin:0"><img src="sheets/only_win.png" alt="Победа"><figcaption>Победа</figcaption></figure><figure style="margin:0"><img src="sheets/only_lose.png" alt="Нет ходов"><figcaption>Нет ходов</figcaption></figure><figure style="margin:0"><img src="sheets/only_clue.png" alt="Подсказка"><figcaption>Подсказка</figcaption></figure><figure style="margin:0"><img src="sheets/only_best.png" alt="Лучшее за неделю"><figcaption>Лучшее за неделю</figcaption></figure></div>
+<h2>Чего не хватает: интерфейс</h2>
+<p>8 картинок. Это те кадры, где до сих пор пиксели исходной игры и которые видно.
+Кадры выключенных экранов (выбор темы, шапка окна) сюда не попали - их рисовать не надо.</p>
+<img src="sheets/left_img.png" alt="оставшиеся кадры интерфейса">
 
-<h2>Аватарки: фотографии убраны</h2>
-<p>В меню слева вверху кружок рядом с именем игрока, по нажатию открывается окно «Сменить аватар».
-Там теперь 15 рисунков Ани, рамка и галочка тоже её.</p>
-<img class="shot" src="shots/avatars.png" alt="окно смены аватара">
-<p>Второй набор из 130 аватарок подставляется выдуманным соперникам в таблице рекордов. В исходной
-игре там лежали <b>фотографии реальных людей</b>, вытащенные прежним разработчиком. Все 130 слотов
-перезаписаны рисунками Ани, ни одной фотографии в сборке не осталось.</p>
-<img src="sheets/avatars_ours.png" alt="аватарки соперников, теперь рисованные">
-<p><span class="tag ok">сделано</span> Проверено машиной: все 130 кадров отличаются от исходных.</p>
+<h2>Чего не хватает: окна и ранги</h2>
+<p>23 картинок. В основном это тянущиеся подложки строк и полосы прогресса: у них движок
+растягивает середину, поэтому рисовать надо так, чтобы узор был только по краям.</p>
+<img src="sheets/left_rank.png" alt="оставшиеся кадры окон и рангов">
 
-<h2>Таблица рекордов и ранги</h2>
-<p>Кнопка «Таблица рекордов» в меню. Строка соперника: место, аватарка, имя, значок ранга и уровень.
-Значков одиннадцать, они растут по мере игры. Из этой же пачки картинок собраны все окна игры -
-крестик, галочки, кольца аватарки, полосы прогресса.</p>
-<img class="shot" src="shots/rank.png" alt="таблица рекордов">
-<p>Поставлено из присланного Аней:</p>
-<img src="sheets/rank_ours.png" alt="кадры рангов, уже наши">
-<p>Осталось чужим в этой пачке (в основном тянущиеся рамки окон, куда нельзя вставить рисунок
-с орнаментом - он размажется по середине):</p>
-<img src="sheets/rank_left.png" alt="кадры рангов, ещё оригинал">
-
-<h2>Темы плиток: остался один набор</h2>
-<p>В исходной игре было три набора плиток и окно «Тема» для выбора. По решению от 3 сентября набор
-один, поэтому кнопка «Тема» из меню убрана вместе с окном. Кадры невидимых наборов в файле тоже
-заменены, чтобы чужих пикселей не осталось.</p>
-
-<h2>Что ещё осталось чужим в интерфейсе</h2>
-<p>20 картинок. Из них десять относятся к окну «Тема», которого больше нет, их
-рисовать не надо. Заметные из оставшихся: подложка игрового поля, сетка на доске, звёзды за уровень,
-рука в обучении. Остальное мелочь.</p>
-<img src="sheets/img_left.png" alt="оставшиеся кадры интерфейса">
-
-<h2>Что из присланного Аней ещё не стоит в игре</h2>
-<p>Плитки использованы все, 55 из 55. Из интерфейса лежит без дела 12 файлов:</p>
-<img src="sheets/artist_unused.png" alt="неиспользованные файлы художницы">
-<p>Почему: горизонтальные фоны <code>bg_1</code> и <code>bg_1920x1080</code> - игра вертикальная, а
-сукно уже её; <code>win</code> и лавры <code>overbg_1/2</code> - в окне победы нет места под отдельную
-панду и ветки; <code>sub_1</code> - в игре один тип панели на все окна, он собран из <code>sub</code>;
-переключатели <code>set_on</code>, <code>set_off_1</code>, <code>set_pointer</code>,
-<code>music_icon</code>, <code>sound_icon</code> - в настройках чекбокс с галочкой, а не тумблер.</p>
-
-<h2>Что дальше</h2>
+<h2>Что попросить у Ани</h2>
 <table>
-<tr><th>Шаг</th><th>Зачем</th></tr>
-<tr><td>Шапка окна</td><td>оранжевая полоса с закруглением сверху, 131x114, тянется только по бокам</td></tr>
-<tr><td>Звёзды, сетка доски, рука обучения, подложка поля</td><td>крупные из оставшихся кадров интерфейса</td></tr>
-<tr><td>Чекбокс настроек</td><td>квадратик 60x60 и галочка к нему, вместо тумблера</td></tr>
-<tr><td>Заменить 21 звук</td><td>сейчас своя только фоновая музыка</td></tr>
-</table>
-<p class="muted">Страница для команды. Внутри есть картинки исходной игры - они показаны как раз для того,
-чтобы было видно, что ещё предстоит заменить. Поисковикам страница закрыта.</p>
+<tr><th>Элемент</th><th>Где</th><th>Как рисовать</th></tr>
+<tr><td>Плашка под надписи</td><td>игровой экран</td><td>тёмная плашка со светлым контуром, пустая, без текста</td></tr><tr><td>Звёзды</td><td>экран победы</td><td>маленькая 96x101 и большая с сиянием 136x138</td></tr><tr><td>Отрезок линии</td><td>игровой экран</td><td>419x3, из него собирается сетка доски и линия соединения пар</td></tr><tr><td>Рука-указатель</td><td>обучение</td><td>100x114</td></tr><tr><td>Подложка строки</td><td>таблица рекордов</td><td>растягивается, узор только по краям</td></tr><tr><td>Полосы прогресса</td><td>ранги</td><td>дорожка и заполнение, тоже растягиваются</td></tr></table>
+<p class="muted">Подробный лист с точными размерами и картинками - на <a href="brief.html">отдельной странице</a>.</p>
+
+<h2>Про шрифт</h2>
+<p>Единственное на экране, что не её рисунок, - это буквы. Текст в игре не картинка: движок рисует его
+вживую из файла шрифта, потому что языков три, а числа меняются. На её макетах буквы нарисованы внутри
+картинки, достать оттуда шрифт нельзя. Подобран ближайший настоящий: Montserrat ExtraBold, заглавными,
+как у неё.</p>
+
+<p class="muted">Страница для команды. Внутри есть картинки исходной игры - они показаны затем, чтобы было
+видно, что предстоит заменить. Поисковикам страница закрыта.</p>
 </div>
